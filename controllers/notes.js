@@ -15,9 +15,13 @@ const Note = require('../models/toDoSchema.js');
 
 noteController.get('/', (req, res) =>{
     Note.find({}, (err, allNotes) =>{
+        if(allNotes < 1){
+            res.render('Empty')
+        }else{
         res.render('Index', {
             notes: allNotes
         })
+    }
     })
 })
 

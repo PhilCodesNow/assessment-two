@@ -9,7 +9,6 @@ class Index extends React.Component{
                 <body>
                     <div>
                         <h1>this is index</h1>
-                        <p>here it is again!</p>
                         <a href="/new">New</a>
                         <ul>
                         {
